@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Streaming</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Video Streaming</div>
+            <div class="nav-links">
+                <button id="loginBtn">Login</button>
+                <button id="logoutBtn" style="display: none;">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Form -->
+    <div id="loginForm" style="display: none;">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p>Don't have an account? <button onclick="showRegisterForm()">Register</button></p>
+    </div>
+
+    <!-- Registration Form -->
+    <div id="registerForm" style="display: none;">
+        <h2>Register</h2>
+        <input type="text" id="registerUsername" placeholder="Username">
+        <input type="email" id="registerEmail" placeholder="Email">
+        <input type="password" id="registerPassword" placeholder="Password">
+        <button onclick="register()">Register</button>
+        <p>Already have an account? <button onclick="showLoginForm()">Login</button></p>
+    </div>
+
+    <!-- User Dashboard -->
+    <div id="userDashboard" style="display: none;">
+        <h2>Welcome, <span id="userName"></span></h2>
+        <div id="uploadForm" style="display: none;">
+            <h3>Upload a Video</h3>
+            <input type="text" id="videoTitle" placeholder="Video Title">
+            <textarea id="videoDescription" placeholder="Description"></textarea>
+            <input type="file" id="videoFile">
+            <button onclick="uploadVideo()">Upload Video</button>
+        </div>
+
+        <h3>Videos</h3>
+        <ul id="videos"></ul>
+
+        <h3>Your Watchlist</h3>
+        <ul id="watchlistItems"></ul>
+
+        <h3>Recommended Videos</h3>
+        <ul id="recommendedVideos"></ul>
+
+        <!-- Video Streaming -->
+        <h3>Watch Video</h3>
+        <video id="videoPlayer" controls width="600"></video>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

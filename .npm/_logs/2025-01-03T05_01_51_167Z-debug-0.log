@@ -1,0 +1,657 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@9.2.0
+2 info using node@v18.19.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/share/nodejs/npm/npmrc Completed in 4ms
+6 timing config:load:builtin Completed in 4ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/home/ubuntu/streaming-service/.npmrc Completed in 2ms
+10 timing config:load:project Completed in 14ms
+11 timing config:load:file:/home/ubuntu/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 26ms
+17 timing npm:load:configload Completed in 26ms
+18 timing npm:load:mkdirpcache Completed in 1ms
+19 timing npm:load:mkdirplogs Completed in 1ms
+20 verbose title npm install @google-cloud/storage
+21 verbose argv "install" "@google-cloud/storage"
+22 timing npm:load:setTitle Completed in 3ms
+23 timing config:load:flatten Completed in 6ms
+24 timing npm:load:display Completed in 8ms
+25 verbose logfile logs-max:10 dir:/home/ubuntu/.npm/_logs/2025-01-03T05_01_51_167Z-
+26 verbose logfile /home/ubuntu/.npm/_logs/2025-01-03T05_01_51_167Z-debug-0.log
+27 timing npm:load:logFile Completed in 12ms
+28 timing npm:load:timers Completed in 1ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 53ms
+31 timing config:load:flatten Completed in 0ms
+32 timing arborist:ctor Completed in 0ms
+33 silly logfile start cleaning logs, removing 1 files
+34 silly logfile done cleaning log files
+35 timing idealTree:init Completed in 173ms
+36 timing idealTree:userRequests Completed in 2ms
+37 silly idealTree buildDeps
+38 silly fetch manifest @google-cloud/storage@*
+39 timing arborist:ctor Completed in 0ms
+40 http fetch GET 200 https://registry.npmjs.org/@google-cloud%2fstorage 280ms (cache updated)
+41 silly placeDep ROOT @google-cloud/storage@7.14.0 OK for: streaming-service@1.0.0 want: *
+42 silly fetch manifest @google-cloud/paginator@^5.0.0
+43 silly fetch manifest @google-cloud/projectify@^4.0.0
+44 silly fetch manifest @google-cloud/promisify@^4.0.0
+45 silly fetch manifest abort-controller@^3.0.0
+46 silly fetch manifest async-retry@^1.3.3
+47 silly fetch manifest duplexify@^4.1.3
+48 silly fetch manifest fast-xml-parser@^4.4.1
+49 silly fetch manifest gaxios@^6.0.2
+50 silly fetch manifest google-auth-library@^9.6.3
+51 silly fetch manifest html-entities@^2.5.2
+52 silly fetch manifest mime@^3.0.0
+53 silly fetch manifest p-limit@^3.0.1
+54 silly fetch manifest retry-request@^7.0.0
+55 silly fetch manifest teeny-request@^9.0.0
+56 silly fetch manifest uuid@^8.0.0
+57 http fetch GET 200 https://registry.npmjs.org/@google-cloud%2fpaginator 274ms (cache updated)
+58 http fetch GET 200 https://registry.npmjs.org/async-retry 306ms (cache updated)
+59 http fetch GET 200 https://registry.npmjs.org/abort-controller 312ms (cache updated)
+60 http fetch GET 200 https://registry.npmjs.org/p-limit 316ms (cache updated)
+61 http fetch GET 200 https://registry.npmjs.org/duplexify 325ms (cache updated)
+62 http fetch GET 200 https://registry.npmjs.org/@google-cloud%2fprojectify 334ms (cache updated)
+63 http fetch GET 200 https://registry.npmjs.org/html-entities 333ms (cache updated)
+64 http fetch GET 200 https://registry.npmjs.org/mime 336ms (cache updated)
+65 http fetch GET 200 https://registry.npmjs.org/retry-request 338ms (cache updated)
+66 http fetch GET 200 https://registry.npmjs.org/uuid 342ms (cache updated)
+67 http fetch GET 200 https://registry.npmjs.org/@google-cloud%2fpromisify 351ms (cache updated)
+68 http fetch GET 200 https://registry.npmjs.org/google-auth-library 351ms (cache updated)
+69 http fetch GET 200 https://registry.npmjs.org/teeny-request 362ms (cache updated)
+70 http fetch GET 200 https://registry.npmjs.org/gaxios 373ms (cache updated)
+71 http fetch GET 200 https://registry.npmjs.org/fast-xml-parser 379ms (cache updated)
+72 timing idealTree:#root Completed in 691ms
+73 silly placeDep ROOT @google-cloud/paginator@5.0.2 OK for: @google-cloud/storage@7.14.0 want: ^5.0.0
+74 silly placeDep ROOT @google-cloud/projectify@4.0.0 OK for: @google-cloud/storage@7.14.0 want: ^4.0.0
+75 silly placeDep ROOT @google-cloud/promisify@4.0.0 OK for: @google-cloud/storage@7.14.0 want: ^4.0.0
+76 silly placeDep ROOT abort-controller@3.0.0 OK for: @google-cloud/storage@7.14.0 want: ^3.0.0
+77 silly placeDep ROOT async-retry@1.3.3 OK for: @google-cloud/storage@7.14.0 want: ^1.3.3
+78 silly placeDep ROOT duplexify@4.1.3 OK for: @google-cloud/storage@7.14.0 want: ^4.1.3
+79 silly placeDep ROOT fast-xml-parser@4.5.1 OK for: @google-cloud/storage@7.14.0 want: ^4.4.1
+80 silly placeDep ROOT gaxios@6.7.1 OK for: @google-cloud/storage@7.14.0 want: ^6.0.2
+81 silly placeDep ROOT google-auth-library@9.15.0 OK for: @google-cloud/storage@7.14.0 want: ^9.6.3
+82 silly placeDep ROOT html-entities@2.5.2 OK for: @google-cloud/storage@7.14.0 want: ^2.5.2
+83 silly placeDep node_modules/@google-cloud/storage mime@3.0.0 OK for: @google-cloud/storage@7.14.0 want: ^3.0.0
+84 silly placeDep ROOT p-limit@3.1.0 OK for: @google-cloud/storage@7.14.0 want: ^3.0.1
+85 silly placeDep ROOT retry-request@7.0.2 OK for: @google-cloud/storage@7.14.0 want: ^7.0.0
+86 silly placeDep ROOT teeny-request@9.0.0 OK for: @google-cloud/storage@7.14.0 want: ^9.0.0
+87 silly placeDep ROOT uuid@8.3.2 OK for: @google-cloud/storage@7.14.0 want: ^8.0.0
+88 silly fetch manifest arrify@^2.0.0
+89 silly fetch manifest extend@^3.0.2
+90 silly fetch manifest event-target-shim@^5.0.0
+91 silly fetch manifest retry@0.13.1
+92 silly fetch manifest end-of-stream@^1.4.1
+93 silly fetch manifest readable-stream@^3.1.1
+94 silly fetch manifest stream-shift@^1.0.2
+95 silly fetch manifest strnum@^1.0.5
+96 silly fetch manifest uuid@^9.0.1
+97 silly fetch manifest is-stream@^2.0.0
+98 silly fetch manifest node-fetch@^2.6.9
+99 silly fetch manifest https-proxy-agent@^7.0.1
+100 silly fetch manifest base64-js@^1.3.0
+101 silly fetch manifest gcp-metadata@^6.1.0
+102 silly fetch manifest gtoken@^7.0.0
+103 silly fetch manifest jws@^4.0.0
+104 silly fetch manifest yocto-queue@^0.1.0
+105 silly fetch manifest @types/request@^2.48.8
+106 silly fetch manifest http-proxy-agent@^5.0.0
+107 silly fetch manifest https-proxy-agent@^5.0.0
+108 silly fetch manifest stream-events@^1.0.5
+109 silly fetch manifest uuid@^9.0.0
+110 http fetch GET 200 https://registry.npmjs.org/stream-shift 290ms (cache updated)
+111 http fetch GET 200 https://registry.npmjs.org/stream-events 282ms (cache updated)
+112 http fetch GET 200 https://registry.npmjs.org/arrify 299ms (cache updated)
+113 http fetch GET 200 https://registry.npmjs.org/strnum 295ms (cache updated)
+114 http fetch GET 200 https://registry.npmjs.org/extend 301ms (cache updated)
+115 http fetch GET 200 https://registry.npmjs.org/end-of-stream 300ms (cache updated)
+116 http fetch GET 200 https://registry.npmjs.org/is-stream 297ms (cache updated)
+117 http fetch GET 200 https://registry.npmjs.org/base64-js 301ms (cache updated)
+118 http fetch GET 200 https://registry.npmjs.org/https-proxy-agent 301ms (cache updated)
+119 http fetch GET 200 https://registry.npmjs.org/https-proxy-agent 298ms (cache updated)
+120 http fetch GET 200 https://registry.npmjs.org/retry 312ms (cache updated)
+121 http fetch GET 200 https://registry.npmjs.org/jws 302ms (cache updated)
+122 http fetch GET 200 https://registry.npmjs.org/http-proxy-agent 305ms (cache updated)
+123 http fetch GET 200 https://registry.npmjs.org/gtoken 314ms (cache updated)
+124 http fetch GET 200 https://registry.npmjs.org/event-target-shim 327ms (cache updated)
+125 http fetch GET 200 https://registry.npmjs.org/@types%2frequest 321ms (cache updated)
+126 http fetch GET 200 https://registry.npmjs.org/yocto-queue 326ms (cache updated)
+127 http fetch GET 200 https://registry.npmjs.org/gcp-metadata 329ms (cache updated)
+128 http fetch GET 200 https://registry.npmjs.org/readable-stream 340ms (cache updated)
+129 http fetch GET 200 https://registry.npmjs.org/node-fetch 342ms (cache updated)
+130 timing idealTree:node_modules/@google-cloud/storage Completed in 393ms
+131 silly placeDep ROOT arrify@2.0.1 OK for: @google-cloud/paginator@5.0.2 want: ^2.0.0
+132 silly placeDep ROOT extend@3.0.2 OK for: @google-cloud/paginator@5.0.2 want: ^3.0.2
+133 timing idealTree:node_modules/@google-cloud/paginator Completed in 4ms
+134 timing idealTree:node_modules/@google-cloud/projectify Completed in 0ms
+135 timing idealTree:node_modules/@google-cloud/promisify Completed in 0ms
+136 silly placeDep ROOT event-target-shim@5.0.1 OK for: abort-controller@3.0.0 want: ^5.0.0
+137 timing idealTree:node_modules/abort-controller Completed in 1ms
+138 timing idealTree:node_modules/arrify Completed in 0ms
+139 silly placeDep ROOT retry@0.13.1 OK for: async-retry@1.3.3 want: 0.13.1
+140 timing idealTree:node_modules/async-retry Completed in 4ms
+141 silly placeDep ROOT end-of-stream@1.4.4 OK for: duplexify@4.1.3 want: ^1.4.1
+142 silly placeDep node_modules/duplexify readable-stream@3.6.2 OK for: duplexify@4.1.3 want: ^3.1.1
+143 silly placeDep ROOT stream-shift@1.0.3 OK for: duplexify@4.1.3 want: ^1.0.2
+144 silly fetch manifest once@^1.4.0
+145 http fetch GET 200 https://registry.npmjs.org/once 34ms (cache updated)
+146 timing idealTree:node_modules/duplexify Completed in 39ms
+147 silly placeDep ROOT once@1.4.0 OK for: end-of-stream@1.4.4 want: ^1.4.0
+148 silly fetch manifest wrappy@1
+149 http fetch GET 200 https://registry.npmjs.org/wrappy 73ms (cache updated)
+150 timing idealTree:node_modules/end-of-stream Completed in 82ms
+151 timing idealTree:node_modules/event-target-shim Completed in 0ms
+152 timing idealTree:node_modules/extend Completed in 0ms
+153 silly placeDep ROOT strnum@1.0.5 OK for: fast-xml-parser@4.5.1 want: ^1.0.5
+154 timing idealTree:node_modules/fast-xml-parser Completed in 2ms
+155 silly fetch manifest encoding@^0.1.0
+156 http fetch GET 200 https://registry.npmjs.org/encoding 34ms (cache updated)
+157 silly placeDep ROOT https-proxy-agent@7.0.6 OK for: gaxios@6.7.1 want: ^7.0.1
+158 silly placeDep ROOT is-stream@2.0.1 OK for: gaxios@6.7.1 want: ^2.0.0
+159 silly placeDep ROOT node-fetch@2.7.0 OK for: gaxios@6.7.1 want: ^2.6.9
+160 silly placeDep node_modules/gaxios uuid@9.0.1 OK for: gaxios@6.7.1 want: ^9.0.1
+161 silly fetch manifest agent-base@^7.1.2
+162 silly fetch manifest debug@4
+163 silly fetch manifest whatwg-url@^5.0.0
+164 http fetch GET 200 https://registry.npmjs.org/whatwg-url 40ms (cache updated)
+165 http fetch GET 200 https://registry.npmjs.org/agent-base 51ms (cache updated)
+166 http fetch GET 200 https://registry.npmjs.org/debug 54ms (cache updated)
+167 timing idealTree:node_modules/gaxios Completed in 111ms
+168 silly placeDep ROOT base64-js@1.5.1 OK for: google-auth-library@9.15.0 want: ^1.3.0
+169 silly placeDep ROOT gcp-metadata@6.1.0 OK for: google-auth-library@9.15.0 want: ^6.1.0
+170 silly placeDep ROOT gtoken@7.1.0 OK for: google-auth-library@9.15.0 want: ^7.0.0
+171 silly placeDep node_modules/google-auth-library jws@4.0.0 OK for: google-auth-library@9.15.0 want: ^4.0.0
+172 silly fetch manifest json-bigint@^1.0.0
+173 silly fetch manifest jwa@^2.0.0
+174 http fetch GET 200 https://registry.npmjs.org/jwa 39ms (cache updated)
+175 http fetch GET 200 https://registry.npmjs.org/json-bigint 48ms (cache updated)
+176 timing idealTree:node_modules/google-auth-library Completed in 60ms
+177 timing idealTree:node_modules/base64-js Completed in 0ms
+178 silly placeDep ROOT json-bigint@1.0.0 OK for: gcp-metadata@6.1.0 want: ^1.0.0
+179 silly fetch manifest bignumber.js@^9.0.0
+180 http fetch GET 200 https://registry.npmjs.org/bignumber.js 43ms (cache updated)
+181 timing idealTree:node_modules/gcp-metadata Completed in 46ms
+182 silly placeDep node_modules/gtoken jws@4.0.0 OK for: gtoken@7.1.0 want: ^4.0.0
+183 timing idealTree:node_modules/gtoken Completed in 4ms
+184 timing idealTree:node_modules/html-entities Completed in 0ms
+185 silly placeDep ROOT agent-base@7.1.3 OK for: https-proxy-agent@7.0.6 want: ^7.1.2
+186 silly placeDep node_modules/https-proxy-agent debug@4.4.0 OK for: https-proxy-agent@7.0.6 want: 4
+187 silly fetch manifest ms@^2.1.3
+188 http fetch GET 200 https://registry.npmjs.org/ms 50ms (cache updated)
+189 timing idealTree:node_modules/https-proxy-agent Completed in 63ms
+190 timing idealTree:node_modules/agent-base Completed in 0ms
+191 timing idealTree:node_modules/is-stream Completed in 0ms
+192 silly placeDep ROOT bignumber.js@9.1.2 OK for: json-bigint@1.0.0 want: ^9.0.0
+193 timing idealTree:node_modules/json-bigint Completed in 2ms
+194 timing idealTree:node_modules/bignumber.js Completed in 0ms
+195 silly fetch manifest gcp-metadata@^5.2.0
+196 silly placeDep ROOT gcp-metadata@5.3.0 REPLACE for: mongodb@6.12.0 want: ^5.2.0
+197 silly fetch manifest gaxios@^5.0.0
+198 timing idealTree:node_modules/mongodb Completed in 14ms
+199 silly placeDep node_modules/gcp-metadata gaxios@5.1.3 OK for: gcp-metadata@5.3.0 want: ^5.0.0
+200 timing idealTree:node_modules/gcp-metadata Completed in 5ms
+201 silly placeDep node_modules/google-auth-library gcp-metadata@6.1.0 OK for: google-auth-library@9.15.0 want: ^6.1.0
+202 timing idealTree:node_modules/google-auth-library Completed in 6ms
+203 silly placeDep node_modules/node-fetch whatwg-url@5.0.0 OK for: node-fetch@2.7.0 want: ^5.0.0
+204 silly fetch manifest tr46@~0.0.3
+205 silly fetch manifest webidl-conversions@^3.0.0
+206 http fetch GET 200 https://registry.npmjs.org/webidl-conversions 49ms (cache updated)
+207 http fetch GET 200 https://registry.npmjs.org/tr46 52ms (cache updated)
+208 timing idealTree:node_modules/node-fetch Completed in 56ms
+209 silly placeDep ROOT wrappy@1.0.2 OK for: once@1.4.0 want: 1
+210 timing idealTree:node_modules/once Completed in 4ms
+211 silly placeDep ROOT yocto-queue@0.1.0 OK for: p-limit@3.1.0 want: ^0.1.0
+212 timing idealTree:node_modules/p-limit Completed in 3ms
+213 timing idealTree:node_modules/retry Completed in 0ms
+214 silly placeDep ROOT @types/request@2.48.12 OK for: retry-request@7.0.2 want: ^2.48.8
+215 silly fetch manifest form-data@^2.5.0
+216 silly fetch manifest @types/node@*
+217 silly fetch manifest @types/caseless@*
+218 silly fetch manifest @types/tough-cookie@*
+219 http fetch GET 200 https://registry.npmjs.org/form-data 51ms (cache updated)
+220 http fetch GET 200 https://registry.npmjs.org/@types%2fcaseless 78ms (cache updated)
+221 http fetch GET 200 https://registry.npmjs.org/@types%2ftough-cookie 119ms (cache updated)
+222 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 188ms (cache updated)
+223 timing idealTree:node_modules/retry-request Completed in 213ms
+224 silly placeDep ROOT @types/caseless@0.12.5 OK for: @types/request@2.48.12 want: *
+225 silly placeDep ROOT @types/node@22.10.4 OK for: @types/request@2.48.12 want: *
+226 silly placeDep ROOT @types/tough-cookie@4.0.5 OK for: @types/request@2.48.12 want: *
+227 silly placeDep ROOT form-data@2.5.2 OK for: @types/request@2.48.12 want: ^2.5.0
+228 silly fetch manifest undici-types@~6.20.0
+229 silly fetch manifest asynckit@^0.4.0
+230 silly fetch manifest combined-stream@^1.0.6
+231 http fetch GET 200 https://registry.npmjs.org/asynckit 40ms (cache updated)
+232 http fetch GET 200 https://registry.npmjs.org/undici-types 53ms (cache updated)
+233 http fetch GET 200 https://registry.npmjs.org/combined-stream 63ms (cache updated)
+234 timing idealTree:node_modules/@types/request Completed in 75ms
+235 timing idealTree:node_modules/@types/caseless Completed in 0ms
+236 silly placeDep ROOT undici-types@6.20.0 OK for: @types/node@22.10.4 want: ~6.20.0
+237 timing idealTree:node_modules/@types/node Completed in 1ms
+238 timing idealTree:node_modules/@types/tough-cookie Completed in 0ms
+239 silly placeDep ROOT asynckit@0.4.0 OK for: form-data@2.5.2 want: ^0.4.0
+240 silly placeDep ROOT combined-stream@1.0.8 OK for: form-data@2.5.2 want: ^1.0.6
+241 silly fetch manifest delayed-stream@~1.0.0
+242 http fetch GET 200 https://registry.npmjs.org/delayed-stream 36ms (cache updated)
+243 timing idealTree:node_modules/form-data Completed in 49ms
+244 timing idealTree:node_modules/asynckit Completed in 0ms
+245 silly placeDep ROOT delayed-stream@1.0.0 OK for: combined-stream@1.0.8 want: ~1.0.0
+246 timing idealTree:node_modules/combined-stream Completed in 1ms
+247 timing idealTree:node_modules/delayed-stream Completed in 0ms
+248 timing idealTree:node_modules/stream-shift Completed in 0ms
+249 timing idealTree:node_modules/strnum Completed in 0ms
+250 silly placeDep ROOT http-proxy-agent@5.0.0 OK for: teeny-request@9.0.0 want: ^5.0.0
+251 silly placeDep node_modules/teeny-request https-proxy-agent@5.0.1 OK for: teeny-request@9.0.0 want: ^5.0.0
+252 silly placeDep ROOT stream-events@1.0.5 OK for: teeny-request@9.0.0 want: ^1.0.5
+253 silly placeDep node_modules/teeny-request uuid@9.0.1 OK for: teeny-request@9.0.0 want: ^9.0.0
+254 silly fetch manifest @tootallnate/once@2
+255 silly fetch manifest agent-base@6
+256 silly fetch manifest stubs@^3.0.0
+257 http fetch GET 200 https://registry.npmjs.org/@tootallnate%2fonce 106ms (cache updated)
+258 http fetch GET 200 https://registry.npmjs.org/stubs 119ms (cache updated)
+259 timing idealTree:node_modules/teeny-request Completed in 134ms
+260 silly placeDep ROOT @tootallnate/once@2.0.0 OK for: http-proxy-agent@5.0.0 want: 2
+261 silly placeDep node_modules/http-proxy-agent agent-base@6.0.2 OK for: http-proxy-agent@5.0.0 want: 6
+262 silly placeDep node_modules/http-proxy-agent debug@4.4.0 OK for: http-proxy-agent@5.0.0 want: 4
+263 timing idealTree:node_modules/http-proxy-agent Completed in 12ms
+264 timing idealTree:node_modules/@tootallnate/once Completed in 0ms
+265 silly placeDep ROOT stubs@3.0.0 OK for: stream-events@1.0.5 want: ^3.0.0
+266 timing idealTree:node_modules/stream-events Completed in 1ms
+267 timing idealTree:node_modules/stubs Completed in 0ms
+268 timing idealTree:node_modules/undici-types Completed in 0ms
+269 timing idealTree:node_modules/uuid Completed in 0ms
+270 timing idealTree:node_modules/wrappy Completed in 0ms
+271 timing idealTree:node_modules/yocto-queue Completed in 0ms
+272 timing idealTree:node_modules/@google-cloud/storage/node_modules/mime Completed in 0ms
+273 timing idealTree:node_modules/duplexify/node_modules/readable-stream Completed in 0ms
+274 timing idealTree:node_modules/gaxios/node_modules/uuid Completed in 0ms
+275 silly placeDep node_modules/gcp-metadata https-proxy-agent@5.0.1 OK for: gaxios@5.1.3 want: ^5.0.0
+276 timing idealTree:node_modules/gcp-metadata/node_modules/gaxios Completed in 1ms
+277 silly placeDep node_modules/gcp-metadata agent-base@6.0.2 OK for: https-proxy-agent@5.0.1 want: 6
+278 silly placeDep node_modules/gcp-metadata debug@4.4.0 OK for: https-proxy-agent@5.0.1 want: 4
+279 timing idealTree:node_modules/gcp-metadata/node_modules/https-proxy-agent Completed in 3ms
+280 timing idealTree:node_modules/gcp-metadata/node_modules/agent-base Completed in 0ms
+281 silly placeDep node_modules/gcp-metadata ms@2.1.3 OK for: debug@4.4.0 want: ^2.1.3
+282 timing idealTree:node_modules/gcp-metadata/node_modules/debug Completed in 1ms
+283 timing idealTree:node_modules/gcp-metadata/node_modules/ms Completed in 0ms
+284 timing idealTree:node_modules/google-auth-library/node_modules/gcp-metadata Completed in 0ms
+285 silly placeDep node_modules/google-auth-library jwa@2.0.0 OK for: jws@4.0.0 want: ^2.0.0
+286 timing idealTree:node_modules/google-auth-library/node_modules/jws Completed in 2ms
+287 timing idealTree:node_modules/google-auth-library/node_modules/jwa Completed in 0ms
+288 silly placeDep node_modules/gtoken jwa@2.0.0 OK for: jws@4.0.0 want: ^2.0.0
+289 timing idealTree:node_modules/gtoken/node_modules/jws Completed in 2ms
+290 timing idealTree:node_modules/gtoken/node_modules/jwa Completed in 0ms
+291 timing idealTree:node_modules/http-proxy-agent/node_modules/agent-base Completed in 0ms
+292 silly placeDep node_modules/http-proxy-agent ms@2.1.3 OK for: debug@4.4.0 want: ^2.1.3
+293 timing idealTree:node_modules/http-proxy-agent/node_modules/debug Completed in 2ms
+294 timing idealTree:node_modules/http-proxy-agent/node_modules/ms Completed in 0ms
+295 silly placeDep node_modules/https-proxy-agent ms@2.1.3 OK for: debug@4.4.0 want: ^2.1.3
+296 timing idealTree:node_modules/https-proxy-agent/node_modules/debug Completed in 1ms
+297 timing idealTree:node_modules/https-proxy-agent/node_modules/ms Completed in 0ms
+298 silly placeDep node_modules/node-fetch tr46@0.0.3 OK for: whatwg-url@5.0.0 want: ~0.0.3
+299 silly placeDep node_modules/node-fetch webidl-conversions@3.0.1 OK for: whatwg-url@5.0.0 want: ^3.0.0
+300 timing idealTree:node_modules/node-fetch/node_modules/whatwg-url Completed in 1ms
+301 timing idealTree:node_modules/node-fetch/node_modules/tr46 Completed in 0ms
+302 timing idealTree:node_modules/node-fetch/node_modules/webidl-conversions Completed in 0ms
+303 silly placeDep node_modules/teeny-request agent-base@6.0.2 OK for: https-proxy-agent@5.0.1 want: 6
+304 silly placeDep node_modules/teeny-request debug@4.4.0 OK for: https-proxy-agent@5.0.1 want: 4
+305 timing idealTree:node_modules/teeny-request/node_modules/https-proxy-agent Completed in 4ms
+306 timing idealTree:node_modules/teeny-request/node_modules/agent-base Completed in 0ms
+307 silly placeDep node_modules/teeny-request ms@2.1.3 OK for: debug@4.4.0 want: ^2.1.3
+308 timing idealTree:node_modules/teeny-request/node_modules/debug Completed in 4ms
+309 timing idealTree:node_modules/teeny-request/node_modules/ms Completed in 1ms
+310 timing idealTree:node_modules/teeny-request/node_modules/uuid Completed in 0ms
+311 timing idealTree:buildDeps Completed in 2116ms
+312 timing idealTree:fixDepFlags Completed in 4ms
+313 timing idealTree Completed in 2301ms
+314 timing reify:loadTrees Completed in 2303ms
+315 timing reify:diffTrees Completed in 14ms
+316 silly reify moves {}
+317 timing reify:retireShallow Completed in 1ms
+318 timing reify:createSparse Completed in 17ms
+319 timing reify:loadBundles Completed in 0ms
+320 silly audit bulk request {
+320 silly audit   '@mongodb-js/saslprep': [ '1.1.9' ],
+320 silly audit   '@types/webidl-conversions': [ '7.0.3' ],
+320 silly audit   '@types/whatwg-url': [ '11.0.5' ],
+320 silly audit   accepts: [ '1.3.8' ],
+320 silly audit   'append-field': [ '1.0.0' ],
+320 silly audit   'array-flatten': [ '1.1.1' ],
+320 silly audit   bcryptjs: [ '2.4.3' ],
+320 silly audit   'body-parser': [ '1.20.3' ],
+320 silly audit   bson: [ '6.10.1' ],
+320 silly audit   'buffer-equal-constant-time': [ '1.0.1' ],
+320 silly audit   'buffer-from': [ '1.1.2' ],
+320 silly audit   busboy: [ '1.6.0' ],
+320 silly audit   bytes: [ '3.1.2' ],
+320 silly audit   'call-bind-apply-helpers': [ '1.0.1' ],
+320 silly audit   'call-bound': [ '1.0.3' ],
+320 silly audit   'concat-stream': [ '1.6.2' ],
+320 silly audit   'content-disposition': [ '0.5.4' ],
+320 silly audit   'content-type': [ '1.0.5' ],
+320 silly audit   cookie: [ '0.7.1' ],
+320 silly audit   'cookie-signature': [ '1.0.6' ],
+320 silly audit   'core-util-is': [ '1.0.3' ],
+320 silly audit   cors: [ '2.8.5' ],
+320 silly audit   debug: [ '2.6.9', '4.4.0' ],
+320 silly audit   depd: [ '2.0.0' ],
+320 silly audit   destroy: [ '1.2.0' ],
+320 silly audit   dotenv: [ '16.4.7' ],
+320 silly audit   'dunder-proto': [ '1.0.1' ],
+320 silly audit   'ecdsa-sig-formatter': [ '1.0.11' ],
+320 silly audit   'ee-first': [ '1.1.1' ],
+320 silly audit   encodeurl: [ '2.0.0', '1.0.2' ],
+320 silly audit   'es-define-property': [ '1.0.1' ],
+320 silly audit   'es-errors': [ '1.3.0' ],
+320 silly audit   'es-object-atoms': [ '1.0.0' ],
+320 silly audit   'escape-html': [ '1.0.3' ],
+320 silly audit   etag: [ '1.8.1' ],
+320 silly audit   express: [ '4.21.2' ],
+320 silly audit   finalhandler: [ '1.3.1' ],
+320 silly audit   forwarded: [ '0.2.0' ],
+320 silly audit   fresh: [ '0.5.2' ],
+320 silly audit   'function-bind': [ '1.1.2' ],
+320 silly audit   'get-intrinsic': [ '1.2.6' ],
+320 silly audit   gopd: [ '1.2.0' ],
+320 silly audit   'has-symbols': [ '1.1.0' ],
+320 silly audit   hasown: [ '2.0.2' ],
+320 silly audit   'http-errors': [ '2.0.0' ],
+320 silly audit   'iconv-lite': [ '0.4.24' ],
+320 silly audit   inherits: [ '2.0.4' ],
+320 silly audit   'ipaddr.js': [ '1.9.1' ],
+320 silly audit   isarray: [ '1.0.0' ],
+320 silly audit   jsonwebtoken: [ '9.0.2' ],
+320 silly audit   ms: [ '2.1.3', '2.0.0' ],
+320 silly audit   jwa: [ '1.4.1', '2.0.0' ],
+320 silly audit   jws: [ '3.2.2', '4.0.0' ],
+320 silly audit   kareem: [ '2.6.3' ],
+320 silly audit   'lodash.includes': [ '4.3.0' ],
+320 silly audit   'lodash.isboolean': [ '3.0.3' ],
+320 silly audit   'lodash.isinteger': [ '4.0.4' ],
+320 silly audit   'lodash.isnumber': [ '3.0.3' ],
+320 silly audit   'lodash.isplainobject': [ '4.0.6' ],
+320 silly audit   'lodash.isstring': [ '4.0.1' ],
+320 silly audit   'lodash.once': [ '4.1.1' ],
+320 silly audit   'math-intrinsics': [ '1.1.0' ],
+320 silly audit   'media-typer': [ '0.3.0' ],
+320 silly audit   'memory-pager': [ '1.5.0' ],
+320 silly audit   'merge-descriptors': [ '1.0.3' ],
+320 silly audit   methods: [ '1.1.2' ],
+320 silly audit   mime: [ '1.6.0', '3.0.0' ],
+320 silly audit   'mime-db': [ '1.52.0' ],
+320 silly audit   'mime-types': [ '2.1.35' ],
+320 silly audit   minimist: [ '1.2.8' ],
+320 silly audit   mkdirp: [ '0.5.6' ],
+320 silly audit   mongodb: [ '6.12.0' ],
+320 silly audit   'mongodb-connection-string-url': [ '3.0.1' ],
+320 silly audit   mongoose: [ '8.9.3' ],
+320 silly audit   mpath: [ '0.9.0' ],
+320 silly audit   mquery: [ '5.0.0' ],
+320 silly audit   multer: [ '1.4.5-lts.1' ],
+320 silly audit   negotiator: [ '0.6.3' ],
+320 silly audit   'object-assign': [ '4.1.1' ],
+320 silly audit   'object-inspect': [ '1.13.3' ],
+320 silly audit   'on-finished': [ '2.4.1' ],
+320 silly audit   parseurl: [ '1.3.3' ],
+320 silly audit   'path-to-regexp': [ '0.1.12' ],
+320 silly audit   'process-nextick-args': [ '2.0.1' ],
+320 silly audit   'proxy-addr': [ '2.0.7' ],
+320 silly audit   punycode: [ '2.3.1' ],
+320 silly audit   qs: [ '6.13.0' ],
+320 silly audit   'range-parser': [ '1.2.1' ],
+320 silly audit   'raw-body': [ '2.5.2' ],
+320 silly audit   'readable-stream': [ '2.3.8', '3.6.2' ],
+320 silly audit   'safe-buffer': [ '5.1.2', '5.2.1' ],
+320 silly audit   'safer-buffer': [ '2.1.2' ],
+320 silly audit   semver: [ '7.6.3' ],
+320 silly audit   send: [ '0.19.0' ],
+320 silly audit   'serve-static': [ '1.16.2' ],
+320 silly audit   setprototypeof: [ '1.2.0' ],
+320 silly audit   'side-channel': [ '1.1.0' ],
+320 silly audit   'side-channel-list': [ '1.0.0' ],
+320 silly audit   'side-channel-map': [ '1.0.1' ],
+320 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+320 silly audit   sift: [ '17.1.3' ],
+320 silly audit   'sparse-bitfield': [ '3.0.3' ],
+320 silly audit   statuses: [ '2.0.1' ],
+320 silly audit   streamsearch: [ '1.1.0' ],
+320 silly audit   string_decoder: [ '1.1.1' ],
+320 silly audit   toidentifier: [ '1.0.1' ],
+320 silly audit   tr46: [ '4.1.1', '0.0.3' ],
+320 silly audit   'type-is': [ '1.6.18' ],
+320 silly audit   typedarray: [ '0.0.6' ],
+320 silly audit   unpipe: [ '1.0.0' ],
+320 silly audit   'util-deprecate': [ '1.0.2' ],
+320 silly audit   'utils-merge': [ '1.0.1' ],
+320 silly audit   vary: [ '1.1.2' ],
+320 silly audit   'webidl-conversions': [ '7.0.0', '3.0.1' ],
+320 silly audit   'whatwg-url': [ '13.0.0', '5.0.0' ],
+320 silly audit   xtend: [ '4.0.2' ],
+320 silly audit   '@google-cloud/storage': [ '7.14.0' ],
+320 silly audit   '@google-cloud/paginator': [ '5.0.2' ],
+320 silly audit   '@google-cloud/projectify': [ '4.0.0' ],
+320 silly audit   '@google-cloud/promisify': [ '4.0.0' ],
+320 silly audit   'abort-controller': [ '3.0.0' ],
+320 silly audit   'async-retry': [ '1.3.3' ],
+320 silly audit   duplexify: [ '4.1.3' ],
+320 silly audit   'fast-xml-parser': [ '4.5.1' ],
+320 silly audit   gaxios: [ '6.7.1', '5.1.3' ],
+320 silly audit   'google-auth-library': [ '9.15.0' ],
+320 silly audit   'html-entities': [ '2.5.2' ],
+320 silly audit   'p-limit': [ '3.1.0' ],
+320 silly audit   'retry-request': [ '7.0.2' ],
+320 silly audit   'teeny-request': [ '9.0.0' ],
+320 silly audit   uuid: [ '8.3.2', '9.0.1' ],
+320 silly audit   arrify: [ '2.0.1' ],
+320 silly audit   extend: [ '3.0.2' ],
+320 silly audit   'event-target-shim': [ '5.0.1' ],
+320 silly audit   retry: [ '0.13.1' ],
+320 silly audit   'end-of-stream': [ '1.4.4' ],
+320 silly audit   'stream-shift': [ '1.0.3' ],
+320 silly audit   once: [ '1.4.0' ],
+320 silly audit   strnum: [ '1.0.5' ],
+320 silly audit   'https-proxy-agent': [ '7.0.6', '5.0.1' ],
+320 silly audit   'is-stream': [ '2.0.1' ],
+320 silly audit   'node-fetch': [ '2.7.0' ],
+320 silly audit   'base64-js': [ '1.5.1' ],
+320 silly audit   gtoken: [ '7.1.0' ],
+320 silly audit   'json-bigint': [ '1.0.0' ],
+320 silly audit   'agent-base': [ '7.1.3', '6.0.2' ],
+320 silly audit   'bignumber.js': [ '9.1.2' ],
+320 silly audit   'gcp-metadata': [ '5.3.0', '6.1.0' ],
+320 silly audit   wrappy: [ '1.0.2' ],
+320 silly audit   'yocto-queue': [ '0.1.0' ],
+320 silly audit   '@types/request': [ '2.48.12' ],
+320 silly audit   '@types/caseless': [ '0.12.5' ],
+320 silly audit   '@types/node': [ '22.10.4' ],
+320 silly audit   '@types/tough-cookie': [ '4.0.5' ],
+320 silly audit   'form-data': [ '2.5.2' ],
+320 silly audit   'undici-types': [ '6.20.0' ],
+320 silly audit   asynckit: [ '0.4.0' ],
+320 silly audit   'combined-stream': [ '1.0.8' ],
+320 silly audit   'delayed-stream': [ '1.0.0' ],
+320 silly audit   'http-proxy-agent': [ '5.0.0' ],
+320 silly audit   'stream-events': [ '1.0.5' ],
+320 silly audit   '@tootallnate/once': [ '2.0.0' ],
+320 silly audit   stubs: [ '3.0.0' ]
+320 silly audit }
+321 silly tarball no local data for uuid@https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz. Extracting by manifest.
+322 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 531ms
+323 timing auditReport:getReport Completed in 545ms
+324 silly audit report {}
+325 timing auditReport:init Completed in 0ms
+326 timing reify:audit Completed in 549ms
+327 timing reifyNode:node_modules/end-of-stream Completed in 593ms
+328 timing reifyNode:node_modules/stubs Completed in 605ms
+329 timing reifyNode:node_modules/gcp-metadata/node_modules/ms Completed in 603ms
+330 timing reifyNode:node_modules/http-proxy-agent/node_modules/ms Completed in 605ms
+331 timing reifyNode:node_modules/stream-events Completed in 607ms
+332 timing reifyNode:node_modules/wrappy Completed in 608ms
+333 timing reifyNode:node_modules/@types/caseless Completed in 608ms
+334 timing reifyNode:node_modules/arrify Completed in 606ms
+335 timing reifyNode:node_modules/p-limit Completed in 606ms
+336 timing reifyNode:node_modules/once Completed in 610ms
+337 timing reifyNode:node_modules/https-proxy-agent/node_modules/ms Completed in 610ms
+338 timing reifyNode:node_modules/teeny-request/node_modules/ms Completed in 613ms
+339 timing reifyNode:node_modules/@types/tough-cookie Completed in 620ms
+340 timing reifyNode:node_modules/yocto-queue Completed in 621ms
+341 timing reifyNode:node_modules/is-stream Completed in 624ms
+342 timing reifyNode:node_modules/gtoken/node_modules/jwa Completed in 628ms
+343 timing reifyNode:node_modules/google-auth-library/node_modules/jwa Completed in 625ms
+344 timing reifyNode:node_modules/node-fetch/node_modules/webidl-conversions Completed in 628ms
+345 timing reifyNode:node_modules/async-retry Completed in 625ms
+346 timing reifyNode:node_modules/combined-stream Completed in 632ms
+347 timing reifyNode:node_modules/@types/request Completed in 631ms
+348 timing reifyNode:node_modules/base64-js Completed in 636ms
+349 timing reifyNode:node_modules/delayed-stream Completed in 638ms
+350 timing reifyNode:node_modules/retry-request Completed in 635ms
+351 timing reifyNode:node_modules/strnum Completed in 636ms
+352 timing reifyNode:node_modules/duplexify Completed in 650ms
+353 timing reifyNode:node_modules/stream-shift Completed in 652ms
+354 timing reifyNode:node_modules/http-proxy-agent Completed in 656ms
+355 timing reifyNode:node_modules/gcp-metadata/node_modules/debug Completed in 656ms
+356 timing reifyNode:node_modules/http-proxy-agent/node_modules/debug Completed in 659ms
+357 timing reifyNode:node_modules/retry Completed in 661ms
+358 timing reifyNode:node_modules/extend Completed in 661ms
+359 timing reifyNode:node_modules/@google-cloud/projectify Completed in 662ms
+360 timing reifyNode:node_modules/https-proxy-agent/node_modules/debug Completed in 665ms
+361 timing reifyNode:node_modules/json-bigint Completed in 666ms
+362 timing reifyNode:node_modules/teeny-request/node_modules/debug Completed in 664ms
+363 timing reifyNode:node_modules/gtoken Completed in 669ms
+364 timing reifyNode:node_modules/@google-cloud/promisify Completed in 676ms
+365 timing reifyNode:node_modules/form-data Completed in 680ms
+366 timing reifyNode:node_modules/@tootallnate/once Completed in 684ms
+367 timing reifyNode:node_modules/google-auth-library/node_modules/jws Completed in 681ms
+368 timing reifyNode:node_modules/gtoken/node_modules/jws Completed in 684ms
+369 timing reifyNode:node_modules/node-fetch/node_modules/whatwg-url Completed in 686ms
+370 timing reifyNode:node_modules/@google-cloud/storage/node_modules/mime Completed in 684ms
+371 timing reifyNode:node_modules/@google-cloud/paginator Completed in 688ms
+372 timing reifyNode:node_modules/gcp-metadata/node_modules/https-proxy-agent Completed in 694ms
+373 timing reifyNode:node_modules/teeny-request/node_modules/https-proxy-agent Completed in 692ms
+374 timing reifyNode:node_modules/http-proxy-agent/node_modules/agent-base Completed in 695ms
+375 timing reifyNode:node_modules/gcp-metadata/node_modules/agent-base Completed in 698ms
+376 timing reifyNode:node_modules/gcp-metadata Completed in 699ms
+377 timing reifyNode:node_modules/teeny-request/node_modules/agent-base Completed in 698ms
+378 timing reifyNode:node_modules/abort-controller Completed in 697ms
+379 timing reifyNode:node_modules/https-proxy-agent Completed in 699ms
+380 timing reifyNode:node_modules/teeny-request Completed in 698ms
+381 timing reifyNode:node_modules/google-auth-library/node_modules/gcp-metadata Completed in 699ms
+382 timing reifyNode:node_modules/node-fetch Completed in 706ms
+383 timing reifyNode:node_modules/agent-base Completed in 706ms
+384 timing reifyNode:node_modules/asynckit Completed in 713ms
+385 timing reifyNode:node_modules/node-fetch/node_modules/tr46 Completed in 713ms
+386 timing reifyNode:node_modules/event-target-shim Completed in 719ms
+387 timing reifyNode:node_modules/gcp-metadata/node_modules/gaxios Completed in 726ms
+388 timing reifyNode:node_modules/bignumber.js Completed in 749ms
+389 timing reifyNode:node_modules/gaxios Completed in 749ms
+390 timing reifyNode:node_modules/html-entities Completed in 755ms
+391 timing reifyNode:node_modules/duplexify/node_modules/readable-stream Completed in 754ms
+392 timing reifyNode:node_modules/undici-types Completed in 776ms
+393 timing reifyNode:node_modules/fast-xml-parser Completed in 890ms
+394 http fetch GET 200 https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz 826ms (cache miss)
+395 timing reifyNode:node_modules/gaxios/node_modules/uuid Completed in 903ms
+396 timing reifyNode:node_modules/teeny-request/node_modules/uuid Completed in 906ms
+397 timing reifyNode:node_modules/uuid Completed in 906ms
+398 timing reifyNode:node_modules/google-auth-library Completed in 939ms
+399 timing reifyNode:node_modules/@google-cloud/storage Completed in 1000ms
+400 timing reifyNode:node_modules/@types/node Completed in 1016ms
+401 timing reify:unpack Completed in 1018ms
+402 timing reify:unretire Completed in 0ms
+403 timing build:queue Completed in 4ms
+404 timing build:link:node_modules/@google-cloud/storage/node_modules/mime Completed in 9ms
+405 timing build:link:node_modules/gaxios/node_modules/uuid Completed in 9ms
+406 timing build:link:node_modules/teeny-request/node_modules/uuid Completed in 9ms
+407 timing build:link:node_modules/fast-xml-parser Completed in 12ms
+408 timing build:link:node_modules/uuid Completed in 9ms
+409 timing build:link Completed in 12ms
+410 timing build:deps Completed in 17ms
+411 timing build Completed in 17ms
+412 timing reify:build Completed in 19ms
+413 timing reify:trash Completed in 0ms
+414 timing reify:save Completed in 75ms
+415 timing reify Completed in 3538ms
+416 silly ADD node_modules/stubs
+417 silly ADD node_modules/@tootallnate/once
+418 silly ADD node_modules/stream-events
+419 silly ADD node_modules/http-proxy-agent
+420 silly ADD node_modules/http-proxy-agent/node_modules/ms
+421 silly ADD node_modules/http-proxy-agent/node_modules/debug
+422 silly ADD node_modules/http-proxy-agent/node_modules/agent-base
+423 silly ADD node_modules/delayed-stream
+424 silly ADD node_modules/combined-stream
+425 silly ADD node_modules/asynckit
+426 silly ADD node_modules/undici-types
+427 silly ADD node_modules/form-data
+428 silly ADD node_modules/@types/tough-cookie
+429 silly ADD node_modules/@types/node
+430 silly ADD node_modules/@types/caseless
+431 silly ADD node_modules/@types/request
+432 silly ADD node_modules/yocto-queue
+433 silly ADD node_modules/wrappy
+434 silly ADD node_modules/gcp-metadata
+435 silly ADD node_modules/gcp-metadata/node_modules/ms
+436 silly ADD node_modules/gcp-metadata/node_modules/debug
+437 silly ADD node_modules/gcp-metadata/node_modules/agent-base
+438 silly ADD node_modules/gcp-metadata/node_modules/https-proxy-agent
+439 silly ADD node_modules/gcp-metadata/node_modules/gaxios
+440 silly ADD node_modules/bignumber.js
+441 silly ADD node_modules/agent-base
+442 silly ADD node_modules/json-bigint
+443 silly ADD node_modules/gtoken
+444 silly ADD node_modules/gtoken/node_modules/jwa
+445 silly ADD node_modules/gtoken/node_modules/jws
+446 silly ADD node_modules/base64-js
+447 silly ADD node_modules/node-fetch
+448 silly ADD node_modules/node-fetch/node_modules/webidl-conversions
+449 silly ADD node_modules/node-fetch/node_modules/tr46
+450 silly ADD node_modules/node-fetch/node_modules/whatwg-url
+451 silly ADD node_modules/is-stream
+452 silly ADD node_modules/https-proxy-agent
+453 silly ADD node_modules/https-proxy-agent/node_modules/ms
+454 silly ADD node_modules/https-proxy-agent/node_modules/debug
+455 silly ADD node_modules/strnum
+456 silly ADD node_modules/once
+457 silly ADD node_modules/stream-shift
+458 silly ADD node_modules/end-of-stream
+459 silly ADD node_modules/retry
+460 silly ADD node_modules/event-target-shim
+461 silly ADD node_modules/extend
+462 silly ADD node_modules/arrify
+463 silly ADD node_modules/uuid
+464 silly ADD node_modules/teeny-request
+465 silly ADD node_modules/teeny-request/node_modules/ms
+466 silly ADD node_modules/teeny-request/node_modules/debug
+467 silly ADD node_modules/teeny-request/node_modules/agent-base
+468 silly ADD node_modules/teeny-request/node_modules/uuid
+469 silly ADD node_modules/teeny-request/node_modules/https-proxy-agent
+470 silly ADD node_modules/retry-request
+471 silly ADD node_modules/p-limit
+472 silly ADD node_modules/html-entities
+473 silly ADD node_modules/google-auth-library
+474 silly ADD node_modules/google-auth-library/node_modules/jwa
+475 silly ADD node_modules/google-auth-library/node_modules/gcp-metadata
+476 silly ADD node_modules/google-auth-library/node_modules/jws
+477 silly ADD node_modules/gaxios
+478 silly ADD node_modules/gaxios/node_modules/uuid
+479 silly ADD node_modules/fast-xml-parser
+480 silly ADD node_modules/duplexify
+481 silly ADD node_modules/duplexify/node_modules/readable-stream
+482 silly ADD node_modules/async-retry
+483 silly ADD node_modules/abort-controller
+484 silly ADD node_modules/@google-cloud/promisify
+485 silly ADD node_modules/@google-cloud/projectify
+486 silly ADD node_modules/@google-cloud/paginator
+487 silly ADD node_modules/@google-cloud/storage
+488 silly ADD node_modules/@google-cloud/storage/node_modules/mime
+489 timing command:install Completed in 3556ms
+490 verbose exit 0
+491 timing npm Completed in 3648ms
+492 info ok

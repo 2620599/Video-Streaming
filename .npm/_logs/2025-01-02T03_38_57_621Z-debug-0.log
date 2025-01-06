@@ -1,0 +1,440 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@9.2.0
+2 info using node@v18.19.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/share/nodejs/npm/npmrc Completed in 6ms
+6 timing config:load:builtin Completed in 6ms
+7 timing config:load:cli Completed in 5ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:/home/ubuntu/upload-service/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 4ms
+11 timing config:load:file:/home/ubuntu/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/etc/npmrc Completed in 1ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:setEnvs Completed in 2ms
+16 timing config:load Completed in 24ms
+17 timing npm:load:configload Completed in 24ms
+18 timing npm:load:mkdirpcache Completed in 0ms
+19 timing npm:load:mkdirplogs Completed in 1ms
+20 verbose title npm install aws-sdk multer
+21 verbose argv "install" "aws-sdk" "multer"
+22 timing npm:load:setTitle Completed in 5ms
+23 timing config:load:flatten Completed in 7ms
+24 timing npm:load:display Completed in 8ms
+25 verbose logfile logs-max:10 dir:/home/ubuntu/.npm/_logs/2025-01-02T03_38_57_621Z-
+26 verbose logfile /home/ubuntu/.npm/_logs/2025-01-02T03_38_57_621Z-debug-0.log
+27 timing npm:load:logFile Completed in 10ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 1ms
+30 timing npm:load Completed in 50ms
+31 timing config:load:flatten Completed in 0ms
+32 timing arborist:ctor Completed in 0ms
+33 silly logfile start cleaning logs, removing 1 files
+34 silly logfile done cleaning log files
+35 timing idealTree:init Completed in 215ms
+36 timing idealTree:userRequests Completed in 2ms
+37 silly idealTree buildDeps
+38 silly fetch manifest multer@^1.4.5-lts.1
+39 timing arborist:ctor Completed in 0ms
+40 http fetch GET 200 https://registry.npmjs.org/multer 246ms (cache updated)
+41 silly fetch manifest aws-sdk@*
+42 http fetch GET 200 https://registry.npmjs.org/aws-sdk 192ms (cache miss)
+43 silly placeDep ROOT aws-sdk@2.1692.0 OK for: upload-service@1.0.0 want: *
+44 silly placeDep ROOT multer@1.4.5-lts.1 REPLACE for: upload-service@1.0.0 want: ^1.4.5-lts.1
+45 silly fetch manifest buffer@4.9.2
+46 silly fetch manifest events@1.1.1
+47 silly fetch manifest ieee754@1.1.13
+48 silly fetch manifest jmespath@0.16.0
+49 silly fetch manifest querystring@0.2.0
+50 silly fetch manifest sax@1.2.1
+51 silly fetch manifest url@0.10.3
+52 silly fetch manifest util@^0.12.4
+53 silly fetch manifest uuid@8.0.0
+54 silly fetch manifest xml2js@0.6.2
+55 http fetch GET 200 https://registry.npmjs.org/buffer 99ms (cache miss)
+56 http fetch GET 200 https://registry.npmjs.org/url 143ms (cache miss)
+57 http fetch GET 200 https://registry.npmjs.org/querystring 156ms (cache miss)
+58 http fetch GET 200 https://registry.npmjs.org/jmespath 165ms (cache miss)
+59 http fetch GET 200 https://registry.npmjs.org/util 155ms (cache miss)
+60 http fetch GET 200 https://registry.npmjs.org/events 182ms (cache miss)
+61 http fetch GET 200 https://registry.npmjs.org/xml2js 155ms (cache miss)
+62 http fetch GET 200 https://registry.npmjs.org/ieee754 178ms (cache miss)
+63 http fetch GET 200 https://registry.npmjs.org/sax 164ms (cache miss)
+64 http fetch GET 200 https://registry.npmjs.org/uuid 165ms (cache miss)
+65 timing idealTree:#root Completed in 694ms
+66 silly placeDep ROOT buffer@4.9.2 OK for: aws-sdk@2.1692.0 want: 4.9.2
+67 silly placeDep ROOT events@1.1.1 OK for: aws-sdk@2.1692.0 want: 1.1.1
+68 silly placeDep ROOT ieee754@1.1.13 OK for: aws-sdk@2.1692.0 want: 1.1.13
+69 silly placeDep ROOT jmespath@0.16.0 OK for: aws-sdk@2.1692.0 want: 0.16.0
+70 silly placeDep ROOT querystring@0.2.0 OK for: aws-sdk@2.1692.0 want: 0.2.0
+71 silly placeDep ROOT sax@1.2.1 OK for: aws-sdk@2.1692.0 want: 1.2.1
+72 silly placeDep ROOT url@0.10.3 OK for: aws-sdk@2.1692.0 want: 0.10.3
+73 silly placeDep ROOT util@0.12.5 OK for: aws-sdk@2.1692.0 want: ^0.12.4
+74 silly placeDep ROOT uuid@8.0.0 OK for: aws-sdk@2.1692.0 want: 8.0.0
+75 silly placeDep ROOT xml2js@0.6.2 OK for: aws-sdk@2.1692.0 want: 0.6.2
+76 silly fetch manifest base64-js@^1.0.2
+77 silly fetch manifest punycode@1.3.2
+78 silly fetch manifest is-arguments@^1.0.4
+79 silly fetch manifest is-generator-function@^1.0.7
+80 silly fetch manifest is-typed-array@^1.1.3
+81 silly fetch manifest which-typed-array@^1.1.2
+82 silly fetch manifest xmlbuilder@~11.0.0
+83 http fetch GET 200 https://registry.npmjs.org/is-generator-function 46ms (cache miss)
+84 http fetch GET 200 https://registry.npmjs.org/base64-js 69ms (cache miss)
+85 http fetch GET 200 https://registry.npmjs.org/is-arguments 65ms (cache miss)
+86 http fetch GET 200 https://registry.npmjs.org/is-typed-array 61ms (cache miss)
+87 http fetch GET 200 https://registry.npmjs.org/which-typed-array 66ms (cache miss)
+88 http fetch GET 200 https://registry.npmjs.org/punycode 74ms (cache updated)
+89 http fetch GET 200 https://registry.npmjs.org/xmlbuilder 73ms (cache miss)
+90 timing idealTree:node_modules/aws-sdk Completed in 111ms
+91 silly placeDep ROOT base64-js@1.5.1 OK for: buffer@4.9.2 want: ^1.0.2
+92 timing idealTree:node_modules/buffer Completed in 4ms
+93 timing idealTree:node_modules/base64-js Completed in 0ms
+94 timing idealTree:node_modules/events Completed in 0ms
+95 timing idealTree:node_modules/ieee754 Completed in 0ms
+96 timing idealTree:node_modules/jmespath Completed in 0ms
+97 timing idealTree:node_modules/multer Completed in 0ms
+98 timing idealTree:node_modules/querystring Completed in 1ms
+99 timing idealTree:node_modules/sax Completed in 0ms
+100 silly placeDep node_modules/url punycode@1.3.2 OK for: url@0.10.3 want: 1.3.2
+101 timing idealTree:node_modules/url Completed in 2ms
+102 silly placeDep ROOT is-arguments@1.2.0 OK for: util@0.12.5 want: ^1.0.4
+103 silly placeDep ROOT is-generator-function@1.0.10 OK for: util@0.12.5 want: ^1.0.7
+104 silly placeDep ROOT is-typed-array@1.1.15 OK for: util@0.12.5 want: ^1.1.3
+105 silly placeDep ROOT which-typed-array@1.1.18 OK for: util@0.12.5 want: ^1.1.2
+106 silly fetch manifest has-tostringtag@^1.0.2
+107 silly fetch manifest has-tostringtag@^1.0.0
+108 silly fetch manifest available-typed-arrays@^1.0.7
+109 silly fetch manifest call-bind@^1.0.8
+110 silly fetch manifest for-each@^0.3.3
+111 http fetch GET 200 https://registry.npmjs.org/has-tostringtag 51ms (cache miss)
+112 http fetch GET 200 https://registry.npmjs.org/has-tostringtag 54ms (cache miss)
+113 http fetch GET 200 https://registry.npmjs.org/for-each 50ms (cache miss)
+114 http fetch GET 200 https://registry.npmjs.org/available-typed-arrays 54ms (cache miss)
+115 http fetch GET 200 https://registry.npmjs.org/call-bind 55ms (cache miss)
+116 timing idealTree:node_modules/util Completed in 63ms
+117 silly placeDep ROOT has-tostringtag@1.0.2 OK for: is-arguments@1.2.0 want: ^1.0.2
+118 timing idealTree:node_modules/is-arguments Completed in 2ms
+119 timing idealTree:node_modules/has-tostringtag Completed in 5ms
+120 timing idealTree:node_modules/is-generator-function Completed in 0ms
+121 timing idealTree:node_modules/is-typed-array Completed in 0ms
+122 timing idealTree:node_modules/uuid Completed in 0ms
+123 silly placeDep ROOT available-typed-arrays@1.0.7 OK for: which-typed-array@1.1.18 want: ^1.0.7
+124 silly placeDep ROOT call-bind@1.0.8 OK for: which-typed-array@1.1.18 want: ^1.0.8
+125 silly placeDep ROOT for-each@0.3.3 OK for: which-typed-array@1.1.18 want: ^0.3.3
+126 silly fetch manifest possible-typed-array-names@^1.0.0
+127 silly fetch manifest set-function-length@^1.2.2
+128 silly fetch manifest is-callable@^1.1.3
+129 http fetch GET 200 https://registry.npmjs.org/set-function-length 27ms (cache miss)
+130 http fetch GET 200 https://registry.npmjs.org/possible-typed-array-names 46ms (cache miss)
+131 http fetch GET 200 https://registry.npmjs.org/is-callable 47ms (cache miss)
+132 timing idealTree:node_modules/which-typed-array Completed in 58ms
+133 silly placeDep ROOT possible-typed-array-names@1.0.0 OK for: available-typed-arrays@1.0.7 want: ^1.0.0
+134 timing idealTree:node_modules/available-typed-arrays Completed in 2ms
+135 silly placeDep ROOT set-function-length@1.2.2 OK for: call-bind@1.0.8 want: ^1.2.2
+136 silly fetch manifest define-data-property@^1.1.4
+137 silly fetch manifest has-property-descriptors@^1.0.2
+138 http fetch GET 200 https://registry.npmjs.org/define-data-property 94ms (cache miss)
+139 http fetch GET 200 https://registry.npmjs.org/has-property-descriptors 93ms (cache miss)
+140 timing idealTree:node_modules/call-bind Completed in 101ms
+141 silly placeDep ROOT is-callable@1.2.7 OK for: for-each@0.3.3 want: ^1.1.3
+142 timing idealTree:node_modules/for-each Completed in 4ms
+143 timing idealTree:node_modules/is-callable Completed in 0ms
+144 timing idealTree:node_modules/possible-typed-array-names Completed in 0ms
+145 silly placeDep ROOT define-data-property@1.1.4 OK for: set-function-length@1.2.2 want: ^1.1.4
+146 silly placeDep ROOT has-property-descriptors@1.0.2 OK for: set-function-length@1.2.2 want: ^1.0.2
+147 timing idealTree:node_modules/set-function-length Completed in 6ms
+148 timing idealTree:node_modules/define-data-property Completed in 0ms
+149 timing idealTree:node_modules/has-property-descriptors Completed in 0ms
+150 silly placeDep ROOT xmlbuilder@11.0.1 OK for: xml2js@0.6.2 want: ~11.0.0
+151 timing idealTree:node_modules/xml2js Completed in 2ms
+152 timing idealTree:node_modules/xmlbuilder Completed in 0ms
+153 timing idealTree:node_modules/url/node_modules/punycode Completed in 0ms
+154 timing idealTree:buildDeps Completed in 1059ms
+155 timing idealTree:fixDepFlags Completed in 1ms
+156 timing idealTree Completed in 1280ms
+157 timing reify:loadTrees Completed in 1282ms
+158 timing reify:diffTrees Completed in 8ms
+159 silly reify moves {}
+160 timing reify:retireShallow Completed in 1ms
+161 timing reify:createSparse Completed in 4ms
+162 timing reify:loadBundles Completed in 0ms
+163 silly audit bulk request {
+163 silly audit   '@mongodb-js/saslprep': [ '1.1.9' ],
+163 silly audit   '@types/webidl-conversions': [ '7.0.3' ],
+163 silly audit   '@types/whatwg-url': [ '11.0.5' ],
+163 silly audit   accepts: [ '1.3.8' ],
+163 silly audit   'append-field': [ '1.0.0' ],
+163 silly audit   'array-flatten': [ '1.1.1' ],
+163 silly audit   bcryptjs: [ '2.4.3' ],
+163 silly audit   'body-parser': [ '1.20.3' ],
+163 silly audit   bson: [ '6.10.1' ],
+163 silly audit   'buffer-equal-constant-time': [ '1.0.1' ],
+163 silly audit   'buffer-from': [ '1.1.2' ],
+163 silly audit   busboy: [ '1.6.0' ],
+163 silly audit   bytes: [ '3.1.2' ],
+163 silly audit   'call-bind-apply-helpers': [ '1.0.1' ],
+163 silly audit   'call-bound': [ '1.0.3' ],
+163 silly audit   'concat-stream': [ '1.6.2' ],
+163 silly audit   'content-disposition': [ '0.5.4' ],
+163 silly audit   'content-type': [ '1.0.5' ],
+163 silly audit   cookie: [ '0.7.1' ],
+163 silly audit   'cookie-signature': [ '1.0.6' ],
+163 silly audit   'core-util-is': [ '1.0.3' ],
+163 silly audit   cors: [ '2.8.5' ],
+163 silly audit   debug: [ '2.6.9', '4.4.0' ],
+163 silly audit   depd: [ '2.0.0' ],
+163 silly audit   destroy: [ '1.2.0' ],
+163 silly audit   dotenv: [ '16.4.7' ],
+163 silly audit   'dunder-proto': [ '1.0.1' ],
+163 silly audit   'ecdsa-sig-formatter': [ '1.0.11' ],
+163 silly audit   'ee-first': [ '1.1.1' ],
+163 silly audit   encodeurl: [ '2.0.0', '1.0.2' ],
+163 silly audit   'es-define-property': [ '1.0.1' ],
+163 silly audit   'es-errors': [ '1.3.0' ],
+163 silly audit   'es-object-atoms': [ '1.0.0' ],
+163 silly audit   'escape-html': [ '1.0.3' ],
+163 silly audit   etag: [ '1.8.1' ],
+163 silly audit   express: [ '4.21.2' ],
+163 silly audit   finalhandler: [ '1.3.1' ],
+163 silly audit   forwarded: [ '0.2.0' ],
+163 silly audit   fresh: [ '0.5.2' ],
+163 silly audit   'function-bind': [ '1.1.2' ],
+163 silly audit   'get-intrinsic': [ '1.2.6' ],
+163 silly audit   gopd: [ '1.2.0' ],
+163 silly audit   'has-symbols': [ '1.1.0' ],
+163 silly audit   hasown: [ '2.0.2' ],
+163 silly audit   'http-errors': [ '2.0.0' ],
+163 silly audit   'iconv-lite': [ '0.4.24' ],
+163 silly audit   inherits: [ '2.0.4' ],
+163 silly audit   'ipaddr.js': [ '1.9.1' ],
+163 silly audit   isarray: [ '1.0.0' ],
+163 silly audit   jsonwebtoken: [ '9.0.2' ],
+163 silly audit   ms: [ '2.1.3', '2.0.0' ],
+163 silly audit   jwa: [ '1.4.1' ],
+163 silly audit   jws: [ '3.2.2' ],
+163 silly audit   kareem: [ '2.6.3' ],
+163 silly audit   'lodash.includes': [ '4.3.0' ],
+163 silly audit   'lodash.isboolean': [ '3.0.3' ],
+163 silly audit   'lodash.isinteger': [ '4.0.4' ],
+163 silly audit   'lodash.isnumber': [ '3.0.3' ],
+163 silly audit   'lodash.isplainobject': [ '4.0.6' ],
+163 silly audit   'lodash.isstring': [ '4.0.1' ],
+163 silly audit   'lodash.once': [ '4.1.1' ],
+163 silly audit   'math-intrinsics': [ '1.1.0' ],
+163 silly audit   'media-typer': [ '0.3.0' ],
+163 silly audit   'memory-pager': [ '1.5.0' ],
+163 silly audit   'merge-descriptors': [ '1.0.3' ],
+163 silly audit   methods: [ '1.1.2' ],
+163 silly audit   mime: [ '1.6.0' ],
+163 silly audit   'mime-db': [ '1.52.0' ],
+163 silly audit   'mime-types': [ '2.1.35' ],
+163 silly audit   minimist: [ '1.2.8' ],
+163 silly audit   mkdirp: [ '0.5.6' ],
+163 silly audit   mongodb: [ '6.12.0' ],
+163 silly audit   'mongodb-connection-string-url': [ '3.0.1' ],
+163 silly audit   mongoose: [ '8.9.3' ],
+163 silly audit   mpath: [ '0.9.0' ],
+163 silly audit   mquery: [ '5.0.0' ],
+163 silly audit   negotiator: [ '0.6.3' ],
+163 silly audit   'object-assign': [ '4.1.1' ],
+163 silly audit   'object-inspect': [ '1.13.3' ],
+163 silly audit   'on-finished': [ '2.4.1' ],
+163 silly audit   parseurl: [ '1.3.3' ],
+163 silly audit   'path-to-regexp': [ '0.1.12' ],
+163 silly audit   'process-nextick-args': [ '2.0.1' ],
+163 silly audit   'proxy-addr': [ '2.0.7' ],
+163 silly audit   punycode: [ '2.3.1', '1.3.2' ],
+163 silly audit   qs: [ '6.13.0' ],
+163 silly audit   'range-parser': [ '1.2.1' ],
+163 silly audit   'raw-body': [ '2.5.2' ],
+163 silly audit   'readable-stream': [ '2.3.8' ],
+163 silly audit   'safe-buffer': [ '5.1.2', '5.2.1' ],
+163 silly audit   'safer-buffer': [ '2.1.2' ],
+163 silly audit   semver: [ '7.6.3' ],
+163 silly audit   send: [ '0.19.0' ],
+163 silly audit   'serve-static': [ '1.16.2' ],
+163 silly audit   setprototypeof: [ '1.2.0' ],
+163 silly audit   'side-channel': [ '1.1.0' ],
+163 silly audit   'side-channel-list': [ '1.0.0' ],
+163 silly audit   'side-channel-map': [ '1.0.1' ],
+163 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+163 silly audit   sift: [ '17.1.3' ],
+163 silly audit   'sparse-bitfield': [ '3.0.3' ],
+163 silly audit   statuses: [ '2.0.1' ],
+163 silly audit   streamsearch: [ '1.1.0' ],
+163 silly audit   string_decoder: [ '1.1.1' ],
+163 silly audit   toidentifier: [ '1.0.1' ],
+163 silly audit   tr46: [ '4.1.1' ],
+163 silly audit   'type-is': [ '1.6.18' ],
+163 silly audit   typedarray: [ '0.0.6' ],
+163 silly audit   unpipe: [ '1.0.0' ],
+163 silly audit   'util-deprecate': [ '1.0.2' ],
+163 silly audit   'utils-merge': [ '1.0.1' ],
+163 silly audit   vary: [ '1.1.2' ],
+163 silly audit   'webidl-conversions': [ '7.0.0' ],
+163 silly audit   'whatwg-url': [ '13.0.0' ],
+163 silly audit   xtend: [ '4.0.2' ],
+163 silly audit   'aws-sdk': [ '2.1692.0' ],
+163 silly audit   multer: [ '1.4.5-lts.1' ],
+163 silly audit   buffer: [ '4.9.2' ],
+163 silly audit   events: [ '1.1.1' ],
+163 silly audit   ieee754: [ '1.1.13' ],
+163 silly audit   jmespath: [ '0.16.0' ],
+163 silly audit   querystring: [ '0.2.0' ],
+163 silly audit   sax: [ '1.2.1' ],
+163 silly audit   url: [ '0.10.3' ],
+163 silly audit   util: [ '0.12.5' ],
+163 silly audit   uuid: [ '8.0.0' ],
+163 silly audit   xml2js: [ '0.6.2' ],
+163 silly audit   'base64-js': [ '1.5.1' ],
+163 silly audit   'is-arguments': [ '1.2.0' ],
+163 silly audit   'is-generator-function': [ '1.0.10' ],
+163 silly audit   'is-typed-array': [ '1.1.15' ],
+163 silly audit   'which-typed-array': [ '1.1.18' ],
+163 silly audit   'has-tostringtag': [ '1.0.2' ],
+163 silly audit   'available-typed-arrays': [ '1.0.7' ],
+163 silly audit   'call-bind': [ '1.0.8' ],
+163 silly audit   'for-each': [ '0.3.3' ],
+163 silly audit   'possible-typed-array-names': [ '1.0.0' ],
+163 silly audit   'set-function-length': [ '1.2.2' ],
+163 silly audit   'is-callable': [ '1.2.7' ],
+163 silly audit   'define-data-property': [ '1.1.4' ],
+163 silly audit   'has-property-descriptors': [ '1.0.2' ],
+163 silly audit   xmlbuilder: [ '11.0.1' ]
+163 silly audit }
+164 silly tarball no local data for xmlbuilder@https://registry.npmjs.org/xmlbuilder/-/xmlbuilder-11.0.1.tgz. Extracting by manifest.
+165 silly tarball no local data for has-property-descriptors@https://registry.npmjs.org/has-property-descriptors/-/has-property-descriptors-1.0.2.tgz. Extracting by manifest.
+166 silly tarball no local data for is-callable@https://registry.npmjs.org/is-callable/-/is-callable-1.2.7.tgz. Extracting by manifest.
+167 silly tarball no local data for possible-typed-array-names@https://registry.npmjs.org/possible-typed-array-names/-/possible-typed-array-names-1.0.0.tgz. Extracting by manifest.
+168 silly tarball no local data for define-data-property@https://registry.npmjs.org/define-data-property/-/define-data-property-1.1.4.tgz. Extracting by manifest.
+169 silly tarball no local data for set-function-length@https://registry.npmjs.org/set-function-length/-/set-function-length-1.2.2.tgz. Extracting by manifest.
+170 silly tarball no local data for for-each@https://registry.npmjs.org/for-each/-/for-each-0.3.3.tgz. Extracting by manifest.
+171 silly tarball no local data for call-bind@https://registry.npmjs.org/call-bind/-/call-bind-1.0.8.tgz. Extracting by manifest.
+172 silly tarball no local data for available-typed-arrays@https://registry.npmjs.org/available-typed-arrays/-/available-typed-arrays-1.0.7.tgz. Extracting by manifest.
+173 silly tarball no local data for has-tostringtag@https://registry.npmjs.org/has-tostringtag/-/has-tostringtag-1.0.2.tgz. Extracting by manifest.
+174 silly tarball no local data for is-typed-array@https://registry.npmjs.org/is-typed-array/-/is-typed-array-1.1.15.tgz. Extracting by manifest.
+175 silly tarball no local data for which-typed-array@https://registry.npmjs.org/which-typed-array/-/which-typed-array-1.1.18.tgz. Extracting by manifest.
+176 silly tarball no local data for is-generator-function@https://registry.npmjs.org/is-generator-function/-/is-generator-function-1.0.10.tgz. Extracting by manifest.
+177 silly tarball no local data for is-arguments@https://registry.npmjs.org/is-arguments/-/is-arguments-1.2.0.tgz. Extracting by manifest.
+178 silly tarball no local data for base64-js@https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz. Extracting by manifest.
+179 silly tarball no local data for xml2js@https://registry.npmjs.org/xml2js/-/xml2js-0.6.2.tgz. Extracting by manifest.
+180 silly tarball no local data for uuid@https://registry.npmjs.org/uuid/-/uuid-8.0.0.tgz. Extracting by manifest.
+181 silly tarball no local data for util@https://registry.npmjs.org/util/-/util-0.12.5.tgz. Extracting by manifest.
+182 silly tarball no local data for url@https://registry.npmjs.org/url/-/url-0.10.3.tgz. Extracting by manifest.
+183 silly tarball no local data for querystring@https://registry.npmjs.org/querystring/-/querystring-0.2.0.tgz. Extracting by manifest.
+184 silly tarball no local data for jmespath@https://registry.npmjs.org/jmespath/-/jmespath-0.16.0.tgz. Extracting by manifest.
+185 silly tarball no local data for ieee754@https://registry.npmjs.org/ieee754/-/ieee754-1.1.13.tgz. Extracting by manifest.
+186 silly tarball no local data for sax@https://registry.npmjs.org/sax/-/sax-1.2.1.tgz. Extracting by manifest.
+187 silly tarball no local data for buffer@https://registry.npmjs.org/buffer/-/buffer-4.9.2.tgz. Extracting by manifest.
+188 silly tarball no local data for events@https://registry.npmjs.org/events/-/events-1.1.1.tgz. Extracting by manifest.
+189 silly tarball no local data for punycode@https://registry.npmjs.org/punycode/-/punycode-1.3.2.tgz. Extracting by manifest.
+190 silly tarball no local data for aws-sdk@https://registry.npmjs.org/aws-sdk/-/aws-sdk-2.1692.0.tgz. Extracting by manifest.
+191 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 292ms
+192 timing auditReport:getReport Completed in 304ms
+193 silly audit report {}
+194 timing auditReport:init Completed in 0ms
+195 timing reify:audit Completed in 304ms
+196 http fetch GET 200 https://registry.npmjs.org/available-typed-arrays/-/available-typed-arrays-1.0.7.tgz 652ms (cache miss)
+197 http fetch GET 200 https://registry.npmjs.org/has-property-descriptors/-/has-property-descriptors-1.0.2.tgz 726ms (cache miss)
+198 http fetch GET 200 https://registry.npmjs.org/for-each/-/for-each-0.3.3.tgz 722ms (cache miss)
+199 http fetch GET 200 https://registry.npmjs.org/ieee754/-/ieee754-1.1.13.tgz 669ms (cache miss)
+200 timing reifyNode:node_modules/ieee754 Completed in 792ms
+201 timing reifyNode:node_modules/for-each Completed in 811ms
+202 http fetch GET 200 https://registry.npmjs.org/possible-typed-array-names/-/possible-typed-array-names-1.0.0.tgz 791ms (cache miss)
+203 timing reifyNode:node_modules/has-property-descriptors Completed in 855ms
+204 http fetch GET 200 https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz 784ms (cache miss)
+205 timing reifyNode:node_modules/base64-js Completed in 866ms
+206 timing reifyNode:node_modules/possible-typed-array-names Completed in 868ms
+207 http fetch GET 200 https://registry.npmjs.org/set-function-length/-/set-function-length-1.2.2.tgz 824ms (cache miss)
+208 timing reifyNode:node_modules/available-typed-arrays Completed in 880ms
+209 http fetch GET 200 https://registry.npmjs.org/punycode/-/punycode-1.3.2.tgz 763ms (cache miss)
+210 timing reifyNode:node_modules/url/node_modules/punycode Completed in 885ms
+211 timing reifyNode:node_modules/set-function-length Completed in 893ms
+212 http fetch GET 200 https://registry.npmjs.org/util/-/util-0.12.5.tgz 823ms (cache miss)
+213 timing reifyNode:node_modules/util Completed in 920ms
+214 http fetch GET 200 https://registry.npmjs.org/call-bind/-/call-bind-1.0.8.tgz 867ms (cache miss)
+215 timing reifyNode:node_modules/call-bind Completed in 930ms
+216 http fetch GET 200 https://registry.npmjs.org/define-data-property/-/define-data-property-1.1.4.tgz 878ms (cache miss)
+217 timing reifyNode:node_modules/define-data-property Completed in 933ms
+218 http fetch GET 200 https://registry.npmjs.org/querystring/-/querystring-0.2.0.tgz 833ms (cache miss)
+219 http fetch GET 200 https://registry.npmjs.org/events/-/events-1.1.1.tgz 834ms (cache miss)
+220 http fetch GET 200 https://registry.npmjs.org/is-typed-array/-/is-typed-array-1.1.15.tgz 893ms (cache miss)
+221 timing reifyNode:node_modules/is-typed-array Completed in 964ms
+222 warn deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+223 timing reifyNode:node_modules/querystring Completed in 973ms
+224 http fetch GET 200 https://registry.npmjs.org/is-callable/-/is-callable-1.2.7.tgz 944ms (cache miss)
+225 timing reifyNode:node_modules/is-callable Completed in 991ms
+226 http fetch GET 200 https://registry.npmjs.org/jmespath/-/jmespath-0.16.0.tgz 897ms (cache miss)
+227 timing reifyNode:node_modules/jmespath Completed in 1005ms
+228 timing reifyNode:node_modules/events Completed in 1005ms
+229 http fetch GET 200 https://registry.npmjs.org/url/-/url-0.10.3.tgz 917ms (cache miss)
+230 timing reifyNode:node_modules/url Completed in 1018ms
+231 http fetch GET 200 https://registry.npmjs.org/which-typed-array/-/which-typed-array-1.1.18.tgz 958ms (cache miss)
+232 timing reifyNode:node_modules/which-typed-array Completed in 1034ms
+233 http fetch GET 200 https://registry.npmjs.org/has-tostringtag/-/has-tostringtag-1.0.2.tgz 972ms (cache miss)
+234 http fetch GET 200 https://registry.npmjs.org/sax/-/sax-1.2.1.tgz 930ms (cache miss)
+235 timing reifyNode:node_modules/sax Completed in 1043ms
+236 http fetch GET 200 https://registry.npmjs.org/is-arguments/-/is-arguments-1.2.0.tgz 963ms (cache miss)
+237 timing reifyNode:node_modules/is-arguments Completed in 1044ms
+238 timing reifyNode:node_modules/has-tostringtag Completed in 1045ms
+239 http fetch GET 200 https://registry.npmjs.org/is-generator-function/-/is-generator-function-1.0.10.tgz 968ms (cache miss)
+240 timing reifyNode:node_modules/is-generator-function Completed in 1045ms
+241 http fetch GET 200 https://registry.npmjs.org/xmlbuilder/-/xmlbuilder-11.0.1.tgz 1073ms (cache miss)
+242 timing reifyNode:node_modules/xmlbuilder Completed in 1123ms
+243 http fetch GET 200 https://registry.npmjs.org/uuid/-/uuid-8.0.0.tgz 1028ms (cache miss)
+244 timing reifyNode:node_modules/uuid Completed in 1126ms
+245 http fetch GET 200 https://registry.npmjs.org/buffer/-/buffer-4.9.2.tgz 1024ms (cache miss)
+246 timing reifyNode:node_modules/buffer Completed in 1138ms
+247 http fetch GET 200 https://registry.npmjs.org/xml2js/-/xml2js-0.6.2.tgz 1177ms (cache miss)
+248 timing reifyNode:node_modules/xml2js Completed in 1262ms
+249 http fetch GET 200 https://registry.npmjs.org/aws-sdk/-/aws-sdk-2.1692.0.tgz 4404ms (cache miss)
+250 timing reifyNode:node_modules/aws-sdk Completed in 4531ms
+251 timing reify:unpack Completed in 4536ms
+252 timing reify:unretire Completed in 0ms
+253 timing build:queue Completed in 12ms
+254 timing build:link:node_modules/uuid Completed in 10ms
+255 timing build:link Completed in 10ms
+256 info run aws-sdk@2.1692.0 postinstall node_modules/aws-sdk node scripts/warn-maintenance-mode.js
+257 info run aws-sdk@2.1692.0 postinstall { code: 0, signal: null }
+258 timing build:run:postinstall:node_modules/aws-sdk Completed in 241ms
+259 timing build:run:postinstall Completed in 242ms
+260 timing build:deps Completed in 264ms
+261 timing build Completed in 264ms
+262 timing reify:build Completed in 267ms
+263 timing reify:trash Completed in 0ms
+264 timing reify:save Completed in 74ms
+265 timing reify Completed in 6247ms
+266 silly ADD node_modules/xmlbuilder
+267 silly ADD node_modules/has-property-descriptors
+268 silly ADD node_modules/define-data-property
+269 silly ADD node_modules/is-callable
+270 silly ADD node_modules/set-function-length
+271 silly ADD node_modules/possible-typed-array-names
+272 silly ADD node_modules/for-each
+273 silly ADD node_modules/call-bind
+274 silly ADD node_modules/available-typed-arrays
+275 silly ADD node_modules/has-tostringtag
+276 silly ADD node_modules/which-typed-array
+277 silly ADD node_modules/is-typed-array
+278 silly ADD node_modules/is-generator-function
+279 silly ADD node_modules/is-arguments
+280 silly ADD node_modules/base64-js
+281 silly ADD node_modules/xml2js
+282 silly ADD node_modules/uuid
+283 silly ADD node_modules/util
+284 silly ADD node_modules/url
+285 silly ADD node_modules/url/node_modules/punycode
+286 silly ADD node_modules/sax
+287 silly ADD node_modules/querystring
+288 silly ADD node_modules/jmespath
+289 silly ADD node_modules/ieee754
+290 silly ADD node_modules/events
+291 silly ADD node_modules/buffer
+292 silly ADD node_modules/aws-sdk
+293 timing command:install Completed in 6269ms
+294 verbose exit 0
+295 timing npm Completed in 6354ms
+296 info ok
