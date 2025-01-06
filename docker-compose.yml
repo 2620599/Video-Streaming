@@ -1,0 +1,69 @@
+version: '3.8'
+
+services:
+  user-service:
+    build:
+      context: ./user-service
+    ports:
+      - "3001:3001"
+    environment:
+      NODE_ENV: development
+      MONGODB_URI: "mongodb+srv://maindamtaki:TKEeZ3roShXrUruR@videostream1.vhm1o.mongodb.net/userdb?retryWrites=true&w=majority"
+
+  upload-service:
+    build:
+      context: ./upload-service
+    ports:
+      - "3002:3002"
+    environment:
+      NODE_ENV: development
+      MONGODB_URI: "mongodb+srv://maindamtaki:TKEeZ3roShXrUruR@videostream1.vhm1o.mongodb.net/mediaDB?retryWrites=true&w=majority"
+      # AWS Configuration (commented for future use)
+      # AWS_REGION: "us-east-1"
+      # AWS_BUCKET_NAME: "maindabucket"
+      # AWS_ACCESS_KEY_ID: "your_aws_access_key"
+      # AWS_SECRET_ACCESS_KEY: "your_aws_secret_key"
+
+      # Google Cloud Configuration
+      GCP_PROJECT_ID: "keen-sight-440922-d6"
+      GCP_CREDENTIALS_PATH: "/credentials/keen-sight-440922-d6-1e1d842a6056.json"
+      GCP_BUCKET_NAME: "maindabucket"
+
+    volumes:
+      - ./credentials:/app/credentials:ro  # Mount the credentials folder to /credentials
+
+  streaming-service:
+    build:
+      context: ./streaming-service
+    ports:
+      - "3003:3003"
+    environment:
+      NODE_ENV: development
+      MONGODB_URI: "mongodb+srv://maindamtaki:TKEeZ3roShXrUruR@videostream1.vhm1o.mongodb.net/mediaDB?retryWrites=true&w=majority"
+
+  watchlist-service:
+    build:
+      context: ./watchlist-service
+    ports:
+      - "3004:3004"
+    environment:
+      NODE_ENV: development
+      MONGODB_URI: "mongodb+srv://maindamtaki:TKEeZ3roShXrUruR@videostream1.vhm1o.mongodb.net/watchlistDB?retryWrites=true&w=majority"
+
+  recommendation-service:
+    build:
+      context: ./recommendation-service
+    ports:
+      - "3005:3005"
+    environment:
+      NODE_ENV: development
+      MONGODB_URI: "mongodb+srv://maindamtaki:TKEeZ3roShXrUruR@videostream1.vhm1o.mongodb.net/recommendationDB?retryWrites=true&w=majority"
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
+    command: http-server /usr/src/app -p 3000 --cors --gzip -c3600
