@@ -2,9 +2,13 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - my-feature-branch  # Add your feature branch here
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
+      - my-feature-branch  # Add your feature branch here
 
 jobs:
   build-and-deploy:
