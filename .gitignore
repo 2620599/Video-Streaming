@@ -4,3 +4,4 @@ credentials/*.json
 *.key
 .env
 config.json
+.bash_history
